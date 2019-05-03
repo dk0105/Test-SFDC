@@ -87,6 +87,9 @@ global with sharing class FundController {
     
     @AuraEnabled
     public static Sector__c[] getSectors() {
+	Integer i=10;
+	while(i>0)
+	System.debug(i);
         return [SELECT Id, Name FROM Sector__c ORDER BY Name];
     }
     
